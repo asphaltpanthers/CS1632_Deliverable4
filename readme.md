@@ -9,48 +9,19 @@ This repo contains the system under test for CS1632's deliverable 4 at the Unive
 3. Open a command prompt in the repo's directory and execute the command `go build main.go`.
 4. From the command prompt run the generated executable. i.e. `main.exe` `./main`.
 
-This service will respond to the following requests:
+This service will respond to the following request:
 
 `curl -X GET \
   http://localhost:8080 \
   -H 'Accept: */*' \
   -H 'Cache-Control: no-cache' \
   -H 'Connection: keep-alive' \
-  -H 'Host: localhost:8080' \
-  -H 'Postman-Token: 5d1d285f-bb64-4a33-9e3e-074dd07d167d,23e3defe-ef7d-4f31-aec5-83f930098198' \
-  -H 'User-Agent: PostmanRuntime/7.15.0' \
-  -H 'accept-encoding: gzip, deflate' \
-  -H 'cache-control: no-cache'`
-
-`curl -X POST \
-  http://localhost:8080 \
-  -H 'Accept: */*' \
-  -H 'Cache-Control: no-cache' \
-  -H 'Connection: keep-alive' \
   -H 'Content-Type: application/json' \
   -H 'Host: localhost:8080' \
-  -H 'Postman-Token: 2c3f6567-7024-4c0f-9fcd-02dc9101630e,5becb1db-ee87-477f-b854-8e439f9431d8' \
+  -H 'Postman-Token: 5d1d285f-bb64-4a33-9e3e-074dd07d167d,23e3defe-ef7d-4f31-aec5-83f930098198,53af1720-603d-4a71-8e07-14a31abf59c1' \
   -H 'User-Agent: PostmanRuntime/7.15.0' \
   -H 'accept-encoding: gzip, deflate' \
-  -H 'cache-control: no-cache' \
-  -H 'content-length: 54' \
+  -H 'cache-control: no-cache,no-cache' \
   -d '{
-	"sender": "TestSender",
-	"message": "TestMessage"
-}'`
-
-`curl -X DELETE \
-  http://localhost:8080 \
-  -H 'Accept: */*' \
-  -H 'Cache-Control: no-cache' \
-  -H 'Connection: keep-alive' \
-  -H 'Content-Type: application/json' \
-  -H 'Host: localhost:8080' \
-  -H 'Postman-Token: e51f0bc1-0063-40ea-bb5f-73994e35d2ed,b315ef2f-e96c-48a4-a28f-53b84aa2b33c' \
-  -H 'User-Agent: PostmanRuntime/7.15.0' \
-  -H 'accept-encoding: gzip, deflate' \
-  -H 'cache-control: no-cache' \
-  -H 'content-length: 12' \
-  -d '{
-	"id": 1
+	"input": 100
 }'`
