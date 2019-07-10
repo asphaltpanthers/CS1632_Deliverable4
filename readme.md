@@ -7,7 +7,7 @@ This repo contains the system under test for CS1632's deliverable 4 at the Unive
 1. Install Go. https://golang.org/dl/
 2. Clone this repo.
 3. Open a command prompt in the repo's directory and execute the command `go build main.go`.
-4. From the command prompt run the generated executable. i.e. `main.exe`.
+4. From the command prompt run the generated executable. i.e. `main.exe` `./main`.
 
 This service will respond to the following requests:
 
