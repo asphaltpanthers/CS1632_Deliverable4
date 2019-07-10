@@ -2,6 +2,13 @@
 
 This repo contains the system under test for CS1632's deliverable 4 at the University of Pittsburgh. This application is a web service written in Go. Service oriented and efficiency oriented performance tests should be executed against this web service to determine its key performance indicators.
 
+## Installation instructions
+
+1. Install Go. https://golang.org/dl/
+2. Clone this repo.
+3. Open a command prompt in the repo's directory and execute the command `go build main.go`.
+4. From the command prompt run the generated executable. i.e. `main.exe`.
+
 This service will respond to the following requests:
 
 `curl -X GET \
@@ -47,4 +54,3 @@ This service will respond to the following requests:
   -d '{
 	"id": 1
 }'`
-
