@@ -18,10 +18,9 @@ This service will respond to the following request:
   -H 'Connection: keep-alive' \
   -H 'Content-Type: application/json' \
   -H 'Host: localhost:8080' \
-  -H 'Postman-Token: 5d1d285f-bb64-4a33-9e3e-074dd07d167d,23e3defe-ef7d-4f31-aec5-83f930098198,53af1720-603d-4a71-8e07-14a31abf59c1' \
+  -H 'Postman-Token: e31254d1-e02a-4986-b482-b1bbe6d35157,59c7c5cc-5a0e-4461-9b57-8c83705096ac' \
   -H 'User-Agent: PostmanRuntime/7.15.0' \
   -H 'accept-encoding: gzip, deflate' \
-  -H 'cache-control: no-cache,no-cache' \
-  -d '{
-	"input": 100
-}'`
+  -H 'cache-control: no-cache' \
+  -H 'content-length: 16' \
+  -d '{ "input": 100 }'`
