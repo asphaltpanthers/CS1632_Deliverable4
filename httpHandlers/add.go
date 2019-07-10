@@ -7,9 +7,9 @@ import (
 
 	"log"
 
-	"github.com/wpferg/services/httpHandlers/httpUtils"
-	"github.com/wpferg/services/storage"
-	"github.com/wpferg/services/structs"
+	"../storage"
+	"../structs"
+	"./httpUtils"
 )
 
 func Add(w http.ResponseWriter, r *http.Request) {

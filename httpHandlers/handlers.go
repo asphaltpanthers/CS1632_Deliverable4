@@ -2,7 +2,7 @@ package httpHandlers
 
 import "net/http"
 import "log"
-import "github.com/wpferg/services/httpHandlers/httpUtils"
+import "./httpUtils"
 
 func HandleRequest(w http.ResponseWriter, r *http.Request) {
 	log.Println("Incoming Request:", r.Method)

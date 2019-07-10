@@ -1,23 +1,26 @@
 package storage
 
 import (
-	"github.com/wpferg/services/structs"
+	"../structs"
 )
 
 var store structs.MessageList
-var currentMaxId = 1
+var currentMaxID = 1
 
+//Get is ...
 func Get() structs.MessageList {
 	return store
 }
 
+//Add is ...
 func Add(message structs.Message) int {
-	message.ID = currentMaxId
-	currentMaxId++
+	message.ID = currentMaxID
+	currentMaxID++
 	store = append(store, message)
 	return message.ID
 }
 
+//Remove is ...
 func Remove(id int) bool {
 	index := -1
 

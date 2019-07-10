@@ -3,8 +3,8 @@ package httpHandlers
 import (
 	"net/http"
 
-	"github.com/wpferg/services/httpHandlers/httpUtils"
-	"github.com/wpferg/services/storage"
+	"../storage"
+	"./httpUtils"
 )
 
 func List(w http.ResponseWriter, r *http.Request) {

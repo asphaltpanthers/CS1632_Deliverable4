@@ -6,9 +6,9 @@ import (
 
 	"encoding/json"
 
-	"github.com/wpferg/services/httpHandlers/httpUtils"
-	"github.com/wpferg/services/storage"
-	"github.com/wpferg/services/structs"
+	"../storage"
+	"../structs"
+	"./httpUtils"
 )
 
 func Remove(w http.ResponseWriter, r *http.Request) {

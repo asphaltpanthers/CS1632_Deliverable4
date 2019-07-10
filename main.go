@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/wpferg/services/httpHandlers"
-	"github.com/wpferg/services/storage"
-	"github.com/wpferg/services/structs"
+	"./httpHandlers"
+	"./storage"
+	"./structs"
 )
 
 const PORT = 8080
